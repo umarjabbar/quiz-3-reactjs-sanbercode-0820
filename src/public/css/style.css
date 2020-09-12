@@ -54,6 +54,7 @@ section{
   margin: 27px auto;
   padding: 27px;
   background: white;
+  overflow: auto;
 }
 
 section h1{
@@ -63,9 +64,10 @@ section h1{
 }
 
 table {
-  width: 90%;
-  margin: 0 auto;
   border-collapse: collapse;
+  width: 100%;
+  /* background: red; */
+  /* overflow-x: hidden; */
 }
 
 table thead {
@@ -82,6 +84,11 @@ table tbody tr td {
   color: rgb(0, 20, 51);
   padding: 7px;
 }
+
+table tbody tr td.desc{
+  width: 100px;
+}
+
 .movie-thumbnail {
   width: 60%;
   height: 280px;
@@ -241,6 +248,8 @@ a.btn-home {
   padding: 7px;
   background:rgb(185, 212, 255);
 }
+
+/* Btn */
 .btn-kirim{
   padding: 7px 24px;
   background: rgb(36, 101, 206);
@@ -260,4 +269,22 @@ a.btn-home {
   background: rgb(226, 0, 49);
   color: white;
   padding: 7px 12px;
+}
+
+.btn-edit {
+  border: none;
+  background: rgb(0, 88, 251);
+  color: white;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 7px;
+}
+
+.btn-del {
+  border: none;
+  background: rgb(194, 0, 58);
+  color: white;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 7px;
 }

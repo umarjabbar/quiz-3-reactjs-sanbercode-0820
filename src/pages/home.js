@@ -23,7 +23,8 @@ class Home extends Component {
         <h1>Best Movies List</h1>
         <div id="article-list">
           {
-           this.state.movies.map(movie => {
+            this.state.movies.map(movie => {
+            const duration = movie.duration / 60;
             const movieThumbnail = {
               backgroundImage: 'url(' + movie.image_url + ')'
             }
@@ -35,7 +36,7 @@ class Home extends Component {
                   <div className="info">
                     <a href="#"><h3>{movie.title}</h3></a>
                     <span>Rating: {movie.rating}</span>
-                    <span>Duration: {movie.duration} Hours</span>
+                    <span>Duration: {duration.toFixed(0)} Hours</span>
                     <span>Genre: {movie.genre}</span>
                   </div>
                 </div>
