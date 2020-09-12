@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <>
         <section>
-          <h1>Featured Posts</h1>
+          <h1>Best Movies List</h1>
           <div id="article-list">
             <div class="article">
               <a href="#"><h3>Lorem Post 1</h3></a>
