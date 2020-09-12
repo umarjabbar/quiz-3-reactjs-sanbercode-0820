@@ -82,6 +82,27 @@ table tbody tr td {
   color: rgb(0, 20, 51);
   padding: 7px;
 }
+.movie-thumbnail {
+  width: 60%;
+  height: 280px;
+  background-size: cover ;
+  background-position: center;
+}
+
+.movie-info {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.movie-info .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21px
+}
+
+.movie-info span{
+  margin-bottom: 7px; 
+}
 
 .movie-search {
   width: 27%;
@@ -104,7 +125,7 @@ table tbody tr td {
 }
 
 .article{
-  margin: 17 0;
+  margin: 17px 0;
   padding-bottom: 5px;
   border-bottom: 2px solid rgb(126, 175, 255);
 }
