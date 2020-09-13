@@ -132,7 +132,6 @@ table tbody tr td.desc{
 }
 
 
-
 .movie-info .info {
   flex: 1;
   display: flex;
@@ -151,11 +150,13 @@ table tbody tr td.desc{
 }
 
 .movie-search {
-  width: 27%;
-  margin: 12px auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto
 }
 
-.movie-search input, .movie-search button{
+.movie-search > input, .movie-search button{
   padding: 3px 7px;
 }
 

@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useState, useContext} from 'react'
+import axios from 'axios'
+import {MovieContext} from './loginContext'
 
-function cariFilm() {
+const MovieSearch = props => {
+  
 
-}
-const MovieSearch = () => {
   return (
     <>
-      <form onSubmit={cariFilm} className="movie-search">
-        <input type="text" required/>
+      <form  className="movie-search">
+        <input type="text"/>
         <button>search</button>
       </form>
     </>

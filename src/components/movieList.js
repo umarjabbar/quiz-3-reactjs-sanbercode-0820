@@ -3,18 +3,6 @@ import axios from 'axios'
 import {MovieContext} from './movieContext'
 
 const MovieList = () => {
-  // const [movie, setMovie] = useState(null)
-  
-  // useEffect( () => {
-  //   if (movie === null) {
-  //     axios.get(`http://backendexample.sanbercloud.com/api/movies`).then(res => {
-  //       setMovie(res.data.map(movie => {
-  //         return {id: movie.id, title: movie.title, description: movie.description, year: movie.year, duration: movie.duration, genre: movie.genre, rating: movie.rating, image: movie.image_url}
-  //       }))
-  //     })
-  //   }
-  // }, [movie])
-
   const [movie, setMovie] = useContext(MovieContext)
   console.log(movie)
 
@@ -60,8 +48,6 @@ const MovieList = () => {
     
   }
 
-
-
   return (
     <>
       <h1>Movies List</h1>
@@ -81,7 +67,7 @@ const MovieList = () => {
         <tbody>
           {
             movie.lists !== null && movie.lists.map((movie, index) => {
-
+            
               const desc = movie.description.slice(0, 200)
               console.log(desc)
               return (
