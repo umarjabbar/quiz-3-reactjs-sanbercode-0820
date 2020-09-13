@@ -33,14 +33,17 @@ class Home extends Component {
               <div class="article">
                 <div className="movie-info">
                   <div style={movieThumbnail} className="movie-thumbnail"></div>
+                  {/* <img src={movie.image_url} className="movie-thumbnail" width="50%"/> */}
                   <div className="info">
-                    <a href="#"><h3>{movie.title}</h3></a>
-                    <span>Rating: {movie.rating}</span>
+                    <div className="atas">
+                      <h2>{movie.title}</h2>
+                      <span>{movie.rating}</span>
+                    </div>
                     <span>Duration: {duration.toFixed(0)} Hours</span>
                     <span>Genre: {movie.genre}</span>
+                    <p><span>Description: </span><br/>{movie.description}</p>
                   </div>
                 </div>
-                <p>{movie.description}</p>
               </div>
             )})
           }
