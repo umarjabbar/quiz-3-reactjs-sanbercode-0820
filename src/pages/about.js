@@ -7,7 +7,7 @@ const About = () =>  {
       <div class="about">
         <div class="top">
           <h2>Data Peserta Sanbercode Bootcamp ReactJs</h2>
-          <div class="foto"> </div>
+          {/* <div class="foto"> </div> */}
         </div>
         <ol>
           <li>Nama: Umar Abdul Jabar</li>

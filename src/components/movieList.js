@@ -67,14 +67,18 @@ const MovieList = () => {
         <tbody>
           {
             movie.lists !== null && movie.lists.map((movie, index) => {
-            
-              const desc = movie.description.slice(0, 200)
-              console.log(desc)
+              // if(movie.description.length())
+              const desc = movie.description
+              // if(desc.length < 200) {
+              //   desc.slice(desc.length);
+              // } else {
+              //   desc.slice(0, 200)
+              // }
               return (
                 <tr>
                   <td>{index+1}</td>
                   <td>{movie.title}</td>
-                  <td>{desc}...</td>
+                  <td>{desc}</td>
                   <td>{movie.year}</td>
                   <td>{movie.duration}</td>
                   <td>{movie.genre}</td>

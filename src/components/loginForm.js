@@ -16,8 +16,7 @@ const LoginForm = () => {
       localStorage.setItem("login", "true")
       window.location.href = '/home'
     } else { 
-      // localStorage.setItem("login", "false")
-      alert('Login Gagal')
+      alert('Username / Password yang anda masukan salah')
     } 
   }
 

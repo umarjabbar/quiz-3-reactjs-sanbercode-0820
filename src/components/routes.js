@@ -15,6 +15,7 @@ const Routes = () => {
         <>
         <Route path="/movie"><Movie /></Route>
         <Route path="/logout"><Logout /></Route>
+
         </>
       )
     } else {
@@ -39,10 +40,10 @@ const Routes = () => {
   return(
     <>
       <Switch>
-        <Route path="/about"><About /></Route>
-        <Route path="/home"><Home /></Route>
+        <Route path="/about" component={About}/>
+        <Route path="/home" component={Home}/>
         <LoginRoute />
-        <Route><NoMatch /></Route>
+        <Route component={NoMatch}/>
       </Switch>
     </>
   )

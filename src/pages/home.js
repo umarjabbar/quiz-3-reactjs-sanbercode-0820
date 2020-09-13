@@ -30,7 +30,7 @@ class Home extends Component {
             }
             console.log(this.state.movies)
             return(
-              <div class="article">
+              <div className="article">
                 <div className="movie-info">
                   <div style={movieThumbnail} className="movie-thumbnail"></div>
                   {/* <img src={movie.image_url} className="movie-thumbnail" width="50%"/> */}
